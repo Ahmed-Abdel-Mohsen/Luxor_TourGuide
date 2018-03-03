@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Luxor</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pavillon">Pavillon Winter Luxor</string>
+    <string name="hilton">Hilton Luxor Resort and Spa</string>
+    <string name="mercure">Mercure Luxor Karnak</string>
+    <string name="sofitel">Sofitel Winter Palace Luxor</string>
+    <string name="steigenberger">Steigenberger Nile Palace Luxor</string>
+    <string name="achti">ACHTI Resort Luxor</string>
+    <string name="philippe">Philippe Hotel</string>
+    <string name="al_moudira">Al Moudira Hotel</string>
+    <string name="eatabe">Eatabe Luxor Hotel</string>
+    <string name="nefertiti">Nefertiti Hotel</string>
+
+    <string name="one_star">1-star hotel</string>
+    <string name="two_stars">2-star hotel</string>
+    <string name="three_stars">3-star hotel</string>
+    <string name="four_stars">4-stars hotel</string>
+    <string name="five_stars">5-star hotel</string>
+
+    <string name="the_lantern">The Lantern Room</string>
+    <string name="pizza">Pizza Roma-it</string>
+    <string name="al_sahaby">Al-Sahaby Lane Restaurant</string>
+    <string name="sofra">Sofra Restaurant and Cafe</string>
+    <string name="aisha">Aisha Restaurant</string>
+    <string name="sunflower">Sunflower Restaurant West bank</string>
+    <string name="snobs">Snobs</string>
+    <string name="aboudi">Aboudi Coffee Break</string>
+
+    <string name="egyptian">Egyptian</string>
+    <string name="international">International</string>
+    <string name="italian">Italian</string>
+    <string name="middle_eastern">Middle Eastern</string>
+
+    <string name="karnak">Temple of Karnak</string>
+    <string name="valley_of_the_kings">Valley of the Kings</string>
+    <string name="luxor_temple">Luxor Temple</string>
+    <string name="deir_al_bahri">Temple of Deir al-Bahri</string>
+    <string name="medinet_habu">Medinet Habu</string>
+    <string name="nobles_tombs">Tombs of the Nobles</string>
+    <string name="ramesseum">Ramesseum</string>
+    <string name="valley_of_the_queens">Valley of the Queens</string>
+
+    <string name="valley">Valley</string>
+    <string name="temple">Temple</string>
+    <string name="tomb">Tomb</string>
+</resources>
