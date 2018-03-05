@@ -18,17 +18,17 @@ public class TempleFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.monument_list, container, false);
+        View rootView = inflater.inflate(R.layout.place_list, container, false);
 
-        ArrayList<Monument> monuments = new ArrayList<>();
+        ArrayList<Place> placesList = new ArrayList<>();
 
-        monuments.add(new Monument(getString(R.string.karnak), getString(R.string.temple), R.drawable.karnak));
-        monuments.add(new Monument(getString(R.string.luxor_temple), getString(R.string.temple), R.drawable.luxor_temple));
-        monuments.add(new Monument(getString(R.string.deir_al_bahri), getString(R.string.temple), R.drawable.deir_al_bahri));
-        monuments.add(new Monument(getString(R.string.medinet_habu), getString(R.string.temple), R.drawable.medinet_habu));
-        monuments.add(new Monument(getString(R.string.ramesseum), getString(R.string.temple), R.drawable.ramesseum));
+        placesList.add(new Place(getString(R.string.karnak), getString(R.string.temple), R.drawable.karnak));
+        placesList.add(new Place(getString(R.string.luxor_temple), getString(R.string.temple), R.drawable.luxor_temple));
+        placesList.add(new Place(getString(R.string.deir_al_bahri), getString(R.string.temple), R.drawable.deir_al_bahri));
+        placesList.add(new Place(getString(R.string.medinet_habu), getString(R.string.temple), R.drawable.medinet_habu));
+        placesList.add(new Place(getString(R.string.ramesseum), getString(R.string.temple), R.drawable.ramesseum));
 
-        MonumentAdapter adapter = new MonumentAdapter(getActivity(), monuments, getResources().getColor(R.color.category_temple));
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesList, getResources().getColor(R.color.category_temple));
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 

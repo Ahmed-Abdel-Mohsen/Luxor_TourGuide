@@ -21,18 +21,18 @@ public class HotelFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.monument_list, container, false);
+        View rootView = inflater.inflate(R.layout.place_list, container, false);
 
-        ArrayList<Monument> monuments = new ArrayList<>();
-        monuments.add(new Monument(getString(R.string.pavillon), getString(R.string.five_stars), R.drawable.pavillon));
-        monuments.add(new Monument(getString(R.string.hilton), getString(R.string.five_stars), R.drawable.hilton));
-        monuments.add(new Monument(getString(R.string.mercure), getString(R.string.five_stars), R.drawable.mercure));
-        monuments.add(new Monument(getString(R.string.sofitel), getString(R.string.five_stars), R.drawable.sofitel));
-        monuments.add(new Monument(getString(R.string.steigenberger), getString(R.string.four_stars), R.drawable.steigenberger));
-        monuments.add(new Monument(getString(R.string.achti), getString(R.string.five_stars), R.drawable.achti));
-        monuments.add(new Monument(getString(R.string.philippe), getString(R.string.three_stars), R.drawable.philippe));
+        ArrayList<Place> placesList = new ArrayList<>();
+        placesList.add(new Place(getString(R.string.pavillon), getString(R.string.five_stars), R.drawable.pavillon));
+        placesList.add(new Place(getString(R.string.hilton), getString(R.string.five_stars), R.drawable.hilton));
+        placesList.add(new Place(getString(R.string.mercure), getString(R.string.five_stars), R.drawable.mercure));
+        placesList.add(new Place(getString(R.string.sofitel), getString(R.string.five_stars), R.drawable.sofitel));
+        placesList.add(new Place(getString(R.string.steigenberger), getString(R.string.four_stars), R.drawable.steigenberger));
+        placesList.add(new Place(getString(R.string.achti), getString(R.string.five_stars), R.drawable.achti));
+        placesList.add(new Place(getString(R.string.philippe), getString(R.string.three_stars), R.drawable.philippe));
 
-        MonumentAdapter adapter = new MonumentAdapter(getActivity(), monuments, getResources().getColor(R.color.category_hotel));
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesList, getResources().getColor(R.color.category_hotel));
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
         return rootView;

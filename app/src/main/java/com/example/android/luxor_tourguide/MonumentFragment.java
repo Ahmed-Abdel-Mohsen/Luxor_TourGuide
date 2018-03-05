@@ -21,18 +21,17 @@ public class MonumentFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.monument_list, container, false);
+        View rootView = inflater.inflate(R.layout.place_list, container, false);
 
-        ArrayList<Monument> monuments = new ArrayList<>();
+        ArrayList<Place> placesList = new ArrayList<>();
+
+        placesList.add(new Place(getString(R.string.valley_of_the_kings), getString(R.string.valley), R.drawable.valley_of_the_kings));
+        placesList.add(new Place(getString(R.string.deir_el_medina), getString(R.string.tomb), R.drawable.deir_el_medina));
+        placesList.add(new Place(getString(R.string.valley_of_the_queens), getString(R.string.valley), R.drawable.valley_of_the_queens));
+        placesList.add(new Place(getString(R.string.nobles_tombs), getString(R.string.tomb), R.drawable.nobles_tombs));
 
 
-        monuments.add(new Monument(getString(R.string.valley_of_the_kings), getString(R.string.valley), R.drawable.valley_of_the_kings));
-        monuments.add(new Monument(getString(R.string.deir_el_medina), getString(R.string.tomb), R.drawable.deir_el_medina));
-        monuments.add(new Monument(getString(R.string.valley_of_the_queens), getString(R.string.valley), R.drawable.valley_of_the_queens));
-        monuments.add(new Monument(getString(R.string.nobles_tombs), getString(R.string.tomb), R.drawable.nobles_tombs));
-
-
-        MonumentAdapter adapter = new MonumentAdapter(getActivity(), monuments, getResources().getColor(R.color.category_monument));
+        PlaceAdapter adapter = new PlaceAdapter(getActivity(), placesList, getResources().getColor(R.color.category_monument));
         ListView listView = rootView.findViewById(R.id.list);
         listView.setAdapter(adapter);
 

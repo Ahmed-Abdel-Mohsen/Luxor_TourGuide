@@ -17,11 +17,11 @@ import java.util.ArrayList;
  * Created by ahmed on 3/2/2018.
  */
 
-public class MonumentAdapter extends ArrayAdapter<Monument> {
+public class PlaceAdapter extends ArrayAdapter<Place> {
 
     private int mColorResourceId;
 
-    public MonumentAdapter(Activity context, ArrayList<Monument> word, int color) {
+    public PlaceAdapter(Activity context, ArrayList<Place> word, int color) {
         super(context, 0, word);
         mColorResourceId = color;
     }
@@ -34,19 +34,19 @@ public class MonumentAdapter extends ArrayAdapter<Monument> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        Monument currentMonument = getItem(position);
+        Place currentPlace = getItem(position);
 
         LinearLayout linearLayout = listItemView.findViewById(R.id.linear_layout);
         linearLayout.setBackgroundColor(mColorResourceId);
 
-        ImageView imageView = listItemView.findViewById(R.id.image);
-        imageView.setImageResource(currentMonument.getImageResourceId());
+        ImageView locationPhotoImageView = listItemView.findViewById(R.id.place_photo_image_view);
+        locationPhotoImageView.setImageResource(currentPlace.getImageResourceId());
 
-        TextView nameTextView = listItemView.findViewById(R.id.name_text_view);
-        nameTextView.setText(currentMonument.getName());
+        TextView nameTextView = listItemView.findViewById(R.id.place_name_text_view);
+        nameTextView.setText(currentPlace.getName());
 
-        TextView typeTextView = listItemView.findViewById(R.id.type_text_view);
-        typeTextView.setText(currentMonument.getType());
+        TextView typeTextView = listItemView.findViewById(R.id.place_type_text_view);
+        typeTextView.setText(currentPlace.getType());
 
         return listItemView;
     }

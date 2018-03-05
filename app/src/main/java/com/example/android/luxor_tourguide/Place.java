@@ -4,12 +4,12 @@ package com.example.android.luxor_tourguide;
  * Created by ahmed on 3/2/2018.
  */
 
-public class Monument {
+public class Place {
     private String name;
     private String type;
     private int mImageResourceId;
 
-    public Monument(String name, String type, int mImageResourceId) {
+    public Place(String name, String type, int mImageResourceId) {
         this.name = name;
         this.type = type;
         this.mImageResourceId = mImageResourceId;
