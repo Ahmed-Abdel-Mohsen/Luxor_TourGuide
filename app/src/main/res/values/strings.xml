@@ -42,8 +42,13 @@
     <string name="nobles_tombs">Tombs of the Nobles</string>
     <string name="ramesseum">Ramesseum</string>
     <string name="valley_of_the_queens">Valley of the Queens</string>
+    <string name="deir_el_medina">Deir el-Medina</string>
 
     <string name="valley">Valley</string>
     <string name="temple">Temple</string>
     <string name="tomb">Tomb</string>
+
+    <string name="hotel">Hotel</string>
+    <string name="monument">Monument</string>
+    <string name="restaurant">Restaurant</string>
 </resources>

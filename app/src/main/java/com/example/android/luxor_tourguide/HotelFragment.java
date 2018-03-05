@@ -10,14 +10,11 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- */
+
 public class HotelFragment extends Fragment {
 
 
     public HotelFragment() {
-        // Required empty public constructor
     }
 
 
@@ -34,9 +31,6 @@ public class HotelFragment extends Fragment {
         monuments.add(new Monument(getString(R.string.steigenberger), getString(R.string.four_stars), R.drawable.steigenberger));
         monuments.add(new Monument(getString(R.string.achti), getString(R.string.five_stars), R.drawable.achti));
         monuments.add(new Monument(getString(R.string.philippe), getString(R.string.three_stars), R.drawable.philippe));
-        /*monuments.add(new Monument(getString(R.string.al_moudira), getString(R.string.five_stars), R.drawable.al_moudira));
-        monuments.add(new Monument(getString(R.string.eatabe), getString(R.string.four_stars), R.drawable.eatabe));
-        monuments.add(new Monument(getString(R.string.nefertiti), getString(R.string.three_stars), R.drawable.nefertiti));*/
 
         MonumentAdapter adapter = new MonumentAdapter(getActivity(), monuments, getResources().getColor(R.color.category_hotel));
         ListView listView = rootView.findViewById(R.id.list);
